@@ -123,6 +123,16 @@ img {
     padding: var(--section-padding);
 }
 
+.hero-header-section {
+    padding-top: 160px !important;
+}
+
+@media (max-width: 991px) {
+    .hero-header-section {
+        padding-top: 120px !important;
+    }
+}
+
 .section-title {
     text-align: center;
     margin-bottom: 60px;
@@ -2130,11 +2140,12 @@ input:checked + .slider:before { transform: translateX(26px); }
 /* --- Floor Plans Unique Sections --- */
 
 .blueprint-hero {
-    min-height: 80vh;
+    min-height: auto;
     background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px 0;
 }
 
 .blueprint-card {
@@ -2290,6 +2301,7 @@ input:checked + .slider:before { transform: translateX(26px); }
     display: inline-block;
     background: linear-gradient(135deg, var(--nebula-purple), var(--starlight-cyan));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: transform 0.5s ease;
 }
