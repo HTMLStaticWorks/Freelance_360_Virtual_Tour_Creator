@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immersive 360° | Premium Virtual Tour Creator</title>
+    <meta name="description" content="Experience premium 360° virtual tours and Matterport walkthroughs for luxury real estate and hospitality.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+    <!-- Immersive Navbar -->
+    <nav class="navbar-custom">
+        <a href="index.html" class="nav-brand text-decoration-none">
+            <div class="logo-icon"><i class="bi bi-box"></i></div>
+            <span class="brand-name">SPATIAL.360</span>
+        </a>
+        
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="home-2.html" class="nav-link">Home 2</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="floor-plans.html" class="nav-link">Floor Plans</a></li>
+            <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+            <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <a href="login.html" class="btn-premium">Login</a>
+            <a href="dashboard.html" class="btn-outline ms-2">Dashboard</a>
+            <button class="theme-toggle" aria-label="Toggle Dark Mode"><i class="bi bi-moon-stars"></i></button>
+            <button class="rtl-toggle" aria-label="Toggle RTL"><i class="bi bi-arrow-left-right"></i></button>
+            <button class="mobile-nav-toggle" aria-label="Toggle Navigation"><i class="bi bi-list"></i></button>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav-overlay"></div>
+    <div class="mobile-nav">
+        <div class="mobile-nav-header">
+            <a href="index.html" class="d-flex align-items-center gap-2 mb-3 text-decoration-none">
+                <div class="logo-icon"><i class="bi bi-box"></i></div>
+                <span class="brand-name">SPATIAL.360</span>
+            </a>
+            <button class="mobile-nav-close"><i class="bi bi-x-lg"></i></button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" class="mobile-nav-link active">Home</a></li>
+            <li><a href="home-2.html" class="mobile-nav-link">Home 2</a></li>
+            <li><a href="about.html" class="mobile-nav-link">About</a></li>
+            <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+            <li><a href="tours.html" class="mobile-nav-link">Tours</a></li>
+            <li><a href="portfolio.html" class="mobile-nav-link">Portfolio</a></li>
+            <li><a href="pricing.html" class="mobile-nav-link">Pricing</a></li>
+            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        
+        <div class="mobile-nav-actions pt-3">
+            <div class="d-flex flex-column gap-3 mb-3">
+                <a href="login.html" class="btn-premium w-100">Login</a>
+                <a href="dashboard.html" class="btn-outline w-100">Dashboard</a>
+            </div>
+            <div class="d-flex justify-content-center gap-3">
+                <button class="theme-toggle" aria-label="Toggle Dark Mode"><i class="bi bi-moon-stars"></i></button>
+                <button class="rtl-toggle" aria-label="Toggle RTL"><i class="bi bi-arrow-left-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cinematic Hero -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1600607687940-4e2a09695d51?auto=format&fit=crop&q=80&w=1920" alt="Luxury Penthouse Virtual Tour">
+        </div>
+        <div class="hero-overlay"></div>
+        
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="hero-content">
+                        <span class="hero-badge">Next-Gen Virtual Storytelling</span>
+                        <h1>Transform Spaces Into <span>Immersive Digital</span> Experiences</h1>
+                        <p>Premium 360° virtual tours, Matterport integrations, and interactive walkthrough experiences for real estate and hospitality brands.</p>
+                        <div class="hero-btns">
+                            <a href="tours.html" class="btn-premium">Explore Tours</a>
+                            <a href="contact.html" class="btn-outline">Book Consultation</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="hero-image-container view-reveal visible">
+                        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=80&w=800" alt="Spatial Preview" class="img-fluid rounded-5 shadow-lg border-glow">
+                        <!-- Floating Spatial Overlays move inside here for better context -->
+                        <div class="hero-visual-inner">
+                            <div class="hotspot" style="top: 20%; left: 30%;">
+                                <div class="hotspot-info">
+                                    <strong>Panoramic Master Suite</strong>
+                                    <p>8K Resolution HDR Capture</p>
+                                </div>
+                            </div>
+                            <div class="hotspot hotspot-magenta" style="top: 50%; left: 60%;">
+                                <div class="hotspot-info">
+                                    <strong>Smart Kitchen Tour</strong>
+                                    <p>Interactive Hotspot Integration</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Section 1: Workflow -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title view-reveal">
+                <h2>The Immersive Workflow</h2>
+                <p>From spatial capture to digital deployment, we handle every pixel with architectural precision.</p>
+            </div>
+            <div class="workflow-grid">
+                <div class="workflow-card view-reveal">
+                    <span class="workflow-num">01</span>
+                    <div class="workflow-img">
+                        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80&w=600" alt="8K Capture">
+                    </div>
+                    <h3>8K Spatial Capture</h3>
+                    <p>Utilizing high-end Matterport Pro3 and Leica systems for millimeter-perfect scans.</p>
+                </div>
+                <div class="workflow-card view-reveal" style="transition-delay: 0.1s;">
+                    <span class="workflow-num">02</span>
+                    <div class="workflow-img">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=600" alt="Digital Stitching">
+                    </div>
+                    <h3>Digital Stitching</h3>
+                    <p>AI-powered panorama stitching ensuring seamless transitions and zero distortion.</p>
+                </div>
+                <div class="workflow-card view-reveal" style="transition-delay: 0.2s;">
+                    <span class="workflow-num">03</span>
+                    <div class="workflow-img">
+                        <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&q=80&w=600" alt="Hotspot Mapping">
+                    </div>
+                    <h3>Hotspot Mapping</h3>
+                    <p>Adding interactive layers, floor plans, and multimedia elements to your tour.</p>
+                </div>
+                <div class="workflow-card view-reveal" style="transition-delay: 0.3s;">
+                    <span class="workflow-num">04</span>
+                    <div class="workflow-img">
+                        <img src="https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?auto=format&fit=crop&q=80&w=600" alt="Global Launch">
+                    </div>
+                    <h3>Global Launch</h3>
+                    <p>Cloud-hosted tours compatible with all devices, VR headsets, and web browsers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Matterport Showcase -->
+    <section class="section showcase-section">
+        <div class="container">
+            <div class="row align-items-center mb-5 text-lg-start text-center">
+                <div class="col-lg-6 view-reveal">
+                    <h2>Matterport Immersive Showcases</h2>
+                    <p class="mt-3">The gold standard in 3D property tours. We deliver cinematic walkthroughs that feel like being there in person.</p>
+                </div>
+                <div class="col-lg-6 text-lg-end text-center mt-4 mt-lg-0 view-reveal">
+                    <a href="portfolio.html" class="btn-outline d-inline-block">View Full Gallery</a>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-8 view-reveal">
+                    <div class="showcase-card">
+                        <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&q=80&w=1200" class="showcase-img" alt="Luxury Hotel Showcase">
+                        <div class="showcase-content">
+                            <span class="showcase-tag">Hospitality</span>
+                            <h3>The Grand Azure Resort & Spa</h3>
+                            <p>Full 3D digital twin with integrated floor plans.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row g-4">
+                        <div class="col-12 view-reveal">
+                            <div class="showcase-card" style="height: 238px;">
+                                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=600" class="showcase-img" alt="Real Estate">
+                                <div class="showcase-content">
+                                    <h3>Skyline Lofts</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 view-reveal">
+                            <div class="showcase-card" style="height: 238px;">
+                                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=600" class="showcase-img" alt="Architecture">
+                                <div class="showcase-content">
+                                    <h3>Neo-Modern Villa</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Floor Plan Integration -->
+    <section class="section">
+        <div class="container">
+            <div class="floor-plan-box view-reveal">
+                <div class="floor-plan-img">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200" alt="3D Floor Plan">
+                    <div class="hotspot hotspot-blue" style="top: 40%; left: 30%;"></div>
+                    <div class="hotspot" style="top: 60%; left: 50%;"></div>
+                </div>
+                <div class="floor-plan-info text-lg-start text-center">
+                    <h2>Interactive Floor Plan Systems</h2>
+                    <p class="mt-3">Navigate complex layouts with ease. Our integrated floor plans provide spatial context and instant teleportation between rooms.</p>
+                    <div class="text-center text-lg-start">
+                        <div class="feature-list text-start d-inline-block">
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="bi bi-check"></i></div>
+                                <span>Auto-generated 2D/3D Schematics</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="bi bi-check"></i></div>
+                                <span>Millimeter-Accurate Measurement Tools</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="bi bi-check"></i></div>
+                                <span>Spatial Anchor Points for Easy Navigation</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <a href="tours.html" class="btn-premium d-inline-block">Explore Tours</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Features -->
+    <section class="section feature-section">
+        <div class="container">
+            <div class="section-title view-reveal">
+                <h2>Spatial Experience Features</h2>
+                <p>Enhancing virtual exploration with cinematic tools and interactive layers.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4 view-reveal">
+                    <div class="spatial-card feature-img-card h-100">
+                        <div class="workflow-img">
+                            <img src="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=600" alt="HDR Quality">
+                        </div>
+                        <h4 class="mt-3">Retina HDR Quality</h4>
+                        <p>Crystal clear visuals that capture every architectural detail and texture.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 view-reveal" style="transition-delay: 0.1s;">
+                    <div class="spatial-card feature-img-card h-100">
+                        <div class="workflow-img">
+                            <img src="https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?auto=format&fit=crop&q=80&w=600" alt="VR Ready">
+                        </div>
+                        <h4 class="mt-3">VR Headset Ready</h4>
+                        <p>Fully compatible with Meta Quest, Apple Vision Pro, and mobile VR.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 view-reveal" style="transition-delay: 0.2s;">
+                    <div class="spatial-card feature-img-card h-100">
+                        <div class="workflow-img">
+                            <img src="https://images.unsplash.com/photo-1516110833967-0b5716ca1387?auto=format&fit=crop&q=80&w=600" alt="Guided Narratives">
+                        </div>
+                        <h4 class="mt-3">Guided Narratives</h4>
+                        <p>Add voiceovers and guided tours to lead viewers through the space.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Testimonials -->
+    <section class="section">
+        <div class="container">
+            <div class="row align-items-center text-lg-start text-center">
+                <div class="col-lg-5 view-reveal mb-5 mb-lg-0">
+                    <h2>Luxury Client Experiences</h2>
+                    <p class="mt-3">Trusted by leading developers and hospitality groups to showcase their most prestigious locations.</p>
+                    <div class="mt-5">
+                        <div class="h1 mb-0 text-grad-purple">98%</div>
+                        <p class="text-muted">Client Satisfaction Rate</p>
+                    </div>
+                </div>
+                <div class="col-lg-7 view-reveal">
+                    <div class="spatial-card text-lg-start text-center">
+                        <div class="d-flex gap-1 mb-3 justify-content-center justify-content-lg-start">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <p class="lead">"The 360° tour created for our luxury penthouse development was instrumental in securing three off-plan sales within the first week. The spatial depth is unparalleled."</p>
+                        <div class="mt-4 d-flex flex-column align-items-center flex-lg-row align-items-lg-center gap-3 justify-content-center justify-content-lg-start">
+                            <div class="logo-icon small"><i class="bi bi-person"></i></div>
+                            <div class="text-center text-lg-start">
+                                <h6 class="m-0">Julian Sterling</h6>
+                                <span class="small text-white opacity-75">CEO, Sterling Heights Realty</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="d-flex align-items-center gap-2 mb-3 text-decoration-none">
+                        <div class="logo-icon"><i class="bi bi-box"></i></div>
+                        <span class="brand-name">SPATIAL.360</span>
+                    </a>
+                    <p>Revolutionizing the way the world views properties. High-end immersive experiences for premium brands.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-vimeo"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h5 class="footer-title">Services</h5>
+                    <ul>
+                        <li><a href="services.html">360° Tours</a></li>
+                        <li><a href="services.html">Matterport</a></li>
+                        <li><a href="services.html">Floor Plans</a></li>
+                        <li><a href="services.html">VR Walkthroughs</a></li>
+                        <li><a href="services.html">HDR Photography</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h5 class="footer-title">Stay Immersed</h5>
+                    <p>Subscribe for latest tour releases and spatial tech updates.</p>
+                    <form class="mt-4">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Email Address">
+                            <button class="btn-premium" type="submit">Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom border-top border-secondary pt-4 text-center">
+                <p class="small text-muted m-0">© 2026 Spatial.360 Immersive Studio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+/* RTL Styles */
+.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+.rtl .navbar-custom .nav-actions {
+    flex-direction: row-reverse;
+}
+
+.rtl .sidebar-logo i {
+    transform: scaleX(-1);
+}
+
+.rtl .menu-item i {
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+.rtl .hero-content {
+    padding-left: 0;
+    padding-right: 5%;
+}
+
+.rtl .hero-visual {
+    right: auto;
+    left: 5%;
+}
+
+.rtl .workflow-num {
+    right: auto;
+    left: 20px;
+}
+
+.rtl .footer-links a:hover {
+    padding-left: 0;
+    padding-right: 5px;
+}
