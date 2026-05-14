@@ -1055,6 +1055,7 @@ body.light-mode .section .container .text-center p {
 
     .hero-btns {
         justify-content: center;
+        margin-bottom: 50px;
     }
 
     .dashboard-main {
@@ -1154,9 +1155,11 @@ body.light-mode .section .container .text-center p {
         display: flex !important;
         flex-wrap: wrap !important;
         gap: 15px !important;
+        margin-bottom: 40px !important;
     }
     .hero-content h1 { font-size: 2.8rem; }
     .hero-visual { display: none; }
+    .hero-image-container img { height: 400px !important; }
     .section-title h2 { font-size: 1.8rem; }
     
     .hero-header-section .section-title,
@@ -1277,6 +1280,7 @@ body.light-mode .section .container .text-center p {
     }
     .hero-content h1 { font-size: 2.5rem; }
     .hero-btns { flex-direction: column; }
+    .hero-image-container img { height: 350px !important; }
     .workflow-grid { grid-template-columns: 1fr; }
     .stat-grid { grid-template-columns: 1fr; }
 }

@@ -315,6 +315,7 @@ body.light-mode .roi-icon,
 body.light-mode .roi-stat {
     background: linear-gradient(135deg, #7c3aed, #0891b2) !important;
     -webkit-background-clip: text !important;
+    background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     color: #7c3aed !important; /* Fallback */
 }
