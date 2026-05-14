@@ -27,6 +27,7 @@ body.light-mode .lead {
 /* Maintain white text for dark-background message bubbles in light mode */
 body.light-mode .msg p {
     color: #ffffff !important;
+    background: #1a1325 !important;
 }
 
 body.light-mode .logo-icon i {
@@ -40,6 +41,11 @@ body.light-mode #messages h2 {
 
 body.light-mode .hero-overlay {
     background: linear-gradient(to bottom, rgba(240, 242, 245, 0.4), rgba(240, 242, 245, 0.95));
+}
+
+/* Home 2 split-screen hero overlay: remove white wash in light mode */
+body.light-mode .hero.p-0 .hero-overlay {
+    background: transparent !important;
 }
 
 body.light-mode .navbar-custom {
@@ -100,6 +106,17 @@ body.light-mode .auth-simple .form-control::placeholder {
 body.light-mode .spatial-card .text-white.opacity-75 {
     color: var(--text-muted) !important;
     opacity: 1 !important;
+}
+
+/* Footer Newsletter Light Mode Fix */
+body.light-mode .footer .form-control {
+    background: rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    color: #1a1325 !important;
+}
+
+body.light-mode .footer .form-control::placeholder {
+    color: rgba(0, 0, 0, 0.4) !important;
 }
 
 body.light-mode .impact-overlay {
@@ -244,6 +261,18 @@ body.light-mode .spotlight-card {
     background: #ffffff !important;
     border-color: rgba(0, 0, 0, 0.05) !important;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03) !important;
+}
+
+/* Fix background numbers contrast (01, 02, 03) */
+body.light-mode .workflow-card::before {
+    color: rgba(124, 58, 237, 0.08) !important;
+}
+
+/* Fix hero-badge visibility in light mode */
+body.light-mode .hero-badge {
+    background: rgba(124, 58, 237, 0.08) !important;
+    border: 1px solid rgba(124, 58, 237, 0.4) !important;
+    color: var(--nebula-purple) !important;
 }
 
 body.light-mode .workflow-card h3,
