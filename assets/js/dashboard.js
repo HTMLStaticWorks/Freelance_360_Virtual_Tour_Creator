@@ -26,6 +26,14 @@ function initSidebarToggle() {
             toggleMenu();
         });
 
+        const closeBtn = document.getElementById('sidebar-close');
+        if (closeBtn) {
+            closeBtn.addEventListener('click', () => {
+                sidebar.classList.remove('active');
+                overlay.classList.remove('active');
+            });
+        }
+
         overlay.addEventListener('click', () => {
             sidebar.classList.remove('active');
             overlay.classList.remove('active');

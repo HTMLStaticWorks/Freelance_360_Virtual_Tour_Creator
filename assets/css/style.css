@@ -15,6 +15,7 @@
     --holographic-blue: #60a5fa;
     --aqua-glow: #2dd4bf;
     --luxury-magenta: #d946ef;
+    --starlight-cyan: #22d3ee;
     --soft-lavender: #c4b5fd;
     
     /* Text Colors */
@@ -918,6 +919,20 @@ body.light-mode .section .container .text-center p {
 
 .sidebar-logo {
     margin-bottom: 50px;
+}
+
+.sidebar-close-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-primary);
+    padding: 0;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.sidebar-close-btn:hover {
+    color: var(--luxury-magenta);
+    transform: scale(1.1);
 }
 
 .sidebar-menu {
@@ -2451,6 +2466,12 @@ input:checked + .slider:before { transform: translateX(26px); }
 
     /* Reduce whitespace between Multi-Layered Intelligence and 3D Isometric sections on mobile */
     .bg-dark-deep.overflow-hidden {
+        padding-top: 150px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .bg-dark-deep.overflow-hidden {
         padding-top: 40px !important;
     }
 }
@@ -2503,13 +2524,23 @@ input:checked + .slider:before { transform: translateX(26px); }
 
 .workflow-icon {
     font-size: 4.5rem;
-    margin-bottom: 20px;
-    display: inline-block;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
     background: linear-gradient(135deg, var(--nebula-purple), var(--starlight-cyan));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: transform 0.5s ease;
+    animation: iconFloat 3s ease-in-out infinite;
+}
+
+@keyframes iconFloat {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(5deg); }
 }
 
 .workflow-card h3 {
@@ -3113,6 +3144,12 @@ input:checked + .slider:before { transform: translateX(26px); }
     }
     .stat-circle::after {
         inset: -10px !important;
+    }
+    .stat-card {
+        text-align: center !important;
+    }
+    .stat-card .d-flex {
+        justify-content: center !important;
     }
 }
 
